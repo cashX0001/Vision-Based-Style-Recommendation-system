@@ -1,6 +1,8 @@
-## GEN AI Project
+## Vision-Based-Style-Recommendation-system
 
-This repository contains a small **GEN AI Project** with a Python backend and a static HTML frontend.
+
+This repository contains  **Vision-Based-Style-Recommendation-system
+** with a Python backend and a static HTML frontend.
 
 ### Project Structure
 
@@ -49,5 +51,6 @@ git push -u origin main
 ```
 
 3. Replace `<your-username>` and `<your-repo-name>` with your actual GitHub username and repository name.
+
 
 
