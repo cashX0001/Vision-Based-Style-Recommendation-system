@@ -61,6 +61,14 @@ This is a sample JSON response from the `/api/analyze-outfit` endpoint:
   "note": "Colors and pattern were estimated from the person region with a heuristic skin removal, so the focus is mostly on clothing rather than background or hair."
 }
 ```
+### Screenshots / Visual Examples
+
+You can show example images directly in this README when viewed on GitHub.  
+Here, we display the **first three screenshots** from the `OP` folder:
+
+![Screenshot 1](<Outputs/Screenshot 2025-12-02 223333.png>)
+![Screenshot 2](<Outputs/Screenshot 2025-12-02 223554.png>)
+![Screenshot 3](<Outputs/Screenshot 2025-12-02 224054.png>)
 
 ### How to Push This Project to GitHub
 
@@ -78,5 +86,6 @@ git push -u origin main
 ```
 
 3. Replace `<your-username>` and `<your-repo-name>` with your actual GitHub username and repository name.
+
 
 
