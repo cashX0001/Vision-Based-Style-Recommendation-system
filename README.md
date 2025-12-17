@@ -1,7 +1,7 @@
-## Vision-Based-Style-Recommendation-system
+## Vision Based Style Recommendation system
 
 
-This repository contains **Vision-Based-Style-Recommendation-system** with a Python backend and a static HTML frontend.
+This repository contains a small **Vision Based Style Recommendation system** with a Python backend and a static HTML frontend.
 
 ### Project Structure
 
@@ -34,6 +34,34 @@ The backend will usually be available at `http://127.0.0.1:8000` (or whatever ho
 
 Open `frontend/index.html` directly in your browser, or serve it with a simple static server (for example, `python -m http.server` inside the `frontend` folder) if your browser blocks local file requests.
 
+Once the backend is running and you upload an outfit image in the UI, you will see:
+
+- **Dominant colors** of the outfit
+- **Top & bottom colors** detected separately
+- **Pattern description** (solid, simple pattern, busy pattern)
+- **Style summary** and **personalized style tips**
+
+### Example API Output
+
+This is a sample JSON response from the `/api/analyze-outfit` endpoint:
+
+```json
+{
+  "clothing_detected": true,
+  "dominant_colors": ["navy", "white", "beige"],
+  "top_colors": ["navy", "white"],
+  "bottom_colors": ["beige"],
+  "pattern_overall": "simple pattern (maybe stripes or checks)",
+  "style_summary": "Outfit with a pop of color.",
+  "style_tips": [
+    "You have some nice color energy. Keep other pieces more neutral so the colorful item stands out.",
+    "Simple patterns are versatile. You can pair them with either solid colors or very subtle patterns.",
+    "You’re using one colorful piece with a neutral one, which is a solid combo. Just keep accessories simple and cohesive."
+  ],
+  "note": "Colors and pattern were estimated from the person region with a heuristic skin removal, so the focus is mostly on clothing rather than background or hair."
+}
+```
+
 ### How to Push This Project to GitHub
 
 1. **Create a new empty repository on GitHub** (do *not* add a README or `.gitignore` there).
@@ -50,7 +78,5 @@ git push -u origin main
 ```
 
 3. Replace `<your-username>` and `<your-repo-name>` with your actual GitHub username and repository name.
-
-
 
 
