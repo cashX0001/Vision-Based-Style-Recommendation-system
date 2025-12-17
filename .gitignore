@@ -1,0 +1,25 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Python packaging / build
+build/
+dist/
+*.egg-info/
+
+# Node / frontend (if added later)
+node_modules/
+*.log
+
+
